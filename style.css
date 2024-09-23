@@ -1,0 +1,171 @@
+ * {
+     /* o* altera o CSS global da pagina  */
+     margin: 0;
+     /* coloca a margin padrão da pagina para zero */
+     padding: 0;
+     /* coloca o padding padrão da pagina para zero */
+     box-sizing: border-box;
+
+ }
+
+ body {
+     font-family: Arial, sans-serif;
+     /* define qual familia de fonte sera usada */
+     line-height: 1.6;
+     /* aumenta o tamanho da linha */
+     background-color: #f9f9f9;
+     /* define a cor do background do elemento selecionado */
+
+ }
+
+ nav {
+     position: fixed;
+     /* fixa a nav na tela a frente das coisas */
+     top: 0;
+     width: 100%;
+     /* altera a largura da nav para 100% da tela  */
+     background-color: #3333338c;
+     /* altera a cor do background da nav */
+     padding: 20px 0;
+     /* o primeiro valor do pedding trabalha a vertical e o segundo trabalha a horizontal */
+
+ }
+
+ nav ul {
+     list-style-type: none;
+     /* muda o estilo e tipo de lista para nenhum  */
+     display: flex;
+     /* torna as informações da tela mais fluidas e responsivas */
+     justify-content: center;
+     /* alinha um elemento */
+
+
+ }
+
+ nav ul li {
+     margin: 0 20px;
+
+ }
+
+ nav ul li a {
+     color: #ffffff;
+     /* muda a cor das letras */
+     text-decoration: none;
+     /* muda decoração dp texto para nenhum (tira o sublinhado)*/
+     padding: 10px;
+     /* formata o pedding vertical */
+     transition: color 1s;
+ }
+
+ nav ul li a:hover {
+     /* hover é um pseudo elemento ativado quando passa o mouse*/
+     color: #ff6347;
+     /* quando passa o mouse fica da cor selecionada */
+ }
+
+ section:not(#home) {
+     /* outro pseudo elemento (not significa que não vai formatar o elemento selecionado)*/
+     padding: 100px 20px;
+     text-align: center;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+
+ }
+
+ #home {
+     /* background-color: #4a90e2; */
+     background-image: url(https://cdn.pixabay.com/photo/2019/01/28/19/07/karate-3961079_1280.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+     /*não repete a imagem no background)*/
+     color: rgb(255, 255, 255);
+     height: 100vh;
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+     /*direção onde vai redirecionar suas flexões*/
+     justify-content: center;
+     align-items: center;
+     font-size: 1.5em;
+
+ }
+
+ .content {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+
+ }
+
+ .content img {
+     width: 400px;
+     height: 300px;
+     object-fit: cover;
+     /*pra imagem se ajustar proporcinalmente*/
+     margin-right: 20px;
+     border-radius: 8px;
+
+ }
+
+ .content .text {
+     max-width: 600px;
+     text-align: left;
+
+ }
+
+ .content .text h2 {
+     font-size: 2em;
+     margin-bottom: 20px;
+     color: #333;
+
+ }
+
+ .content .text p {
+     font-size: 1.1em;
+     color: #555;
+ }
+
+ #introducao {
+     background-color: #da9595;
+
+ }
+
+ #origem {
+     background-color: #eaeaea;
+
+ }
+
+ #japao {
+     background-color: #da9595;
+ }
+
+ .cta-button {
+     margin-top: 30px;
+     background-color: #89ff29;
+     color: rgb(0, 0, 0);
+     padding: 15px 30px;
+     font-size: 18px;
+     border: none;
+     /* remove a borda do botão */
+     border-radius: 15px;
+     cursor: pointer;
+     transition: background-color 1s ease, transform 1s ease;
+
+ }
+
+ cta-button:hover {
+     box-shadow: 0px 4px 6px rgb(65, 226, 164);
+
+ }
+
+
+
+
+
+
+
+
+ /*  */
